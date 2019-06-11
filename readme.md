@@ -8,10 +8,11 @@
 ## 项目分工
 
 - yifang
-3d client engine with OpenGL
+静态库，跟随游戏工程 yibiao 一起开发。把yibiao中用到的公用代码统一起来，在 yifang 项目中管理。  
+可以称之为简单的 "引擎"。
 
 - yibiao
-3d client gameplay code with OpenGL
+游戏内容工程。通用的底层封装在 yifang 工程里，yibiao工程只关心游戏逻辑。
 
 - yizha
 Code TCP or UDP server with python
