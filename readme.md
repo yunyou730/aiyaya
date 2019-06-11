@@ -7,8 +7,11 @@
 
 ## 项目分工
 
+- yifang
+3d client engine with OpenGL
+
 - yibiao
-3d client with OpenGL
+3d client gameplay code with OpenGL
 
 - yizha
 Code TCP or UDP server with python
@@ -19,6 +22,4 @@ other test client.maybe with h5 game engine
 - yiguo 
 other test server.maybe with golang
 
-- yifang
-待定
 
