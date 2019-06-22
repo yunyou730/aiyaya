@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>study1 test frontend</title>
+	</head>
+	<body>
+		<script src = "index.js"></script>
+		<script src = "http://127.0.0.1:5000/test"></script>
+		<script src = "HttpRequest.js"></script>
+		<div id = "jsonp_area"></div>
+		<form>
+			user name:<br/>
+			<input type="text" name="username"></input>
+			password:<br/>
+			<input type="text" name="password"></input>
+			<input type="submit" value="Submit">
+		</form>
+
+		<button onclick="localfunc({'result':'local data'})">test</button>
+
+		<button onclick="test_jsonp()">test</button>
+		<!-- <button onclick="testfunc()">testremote</button> -->
+	</body>
+</html>
