@@ -36,8 +36,12 @@ void WindowFrame::mainloop()
 	{
 		return;
 	}
+	int i = 0;
 	while (!glfwWindowShouldClose(_window))
 	{
+		printf("%d\n",i++);
+		fflush(stdout);
+		fflush(stderr);
 		glfwPollEvents();
 		glfwSwapBuffers(_window);
 	}

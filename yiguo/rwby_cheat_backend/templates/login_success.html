@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function jump()
+{
+	/*
+	file:///D:/miao/aiyaya/yiguo/rwby_cheat_frontend/login.html
+	*/
+	console.log("file:///{{url}}");
+	// window.location.href = "file:///d%3A/miao/aiyaya/yiguo/rwby_cheat_frontend/index.html"
+	// window.location.href = "file:///{{url}}"
+	window.location.href = "{{url}}"
+}
+</script>
+</head>
+<body onload = "jump()">
+	login success!
+	<br/>
+	<!-- <a href = "file:///D:/miao/aiyaya/yiguo/rwby_cheat_frontend/index.html">goto</a> -->
+	<!-- <a href = "{{url}}">{{url}}</a> -->
+</body>
+</html>

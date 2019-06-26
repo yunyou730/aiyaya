@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function clickLogin()
+{
+	var domain = document.getElementById("domain")
+	domain.value = window.location.pathname;
+	domain.value = "http://www.baidu.com"
+	var form = document.getElementById("login_form");
+	form.submit();
+}
+</script>
+</head>
+<body>
+	<form action = "http://127.0.0.1:5000/login" method = "post" id = "login_form">
+		username:<input type = "text" name = "uname" value = "" id = "username"></input>
+		<br/>
+		password:<input type = "password" name = "pwd" value = "" id = "password"></input>
+		<br/>
+		<input type="hidden" name = "dmain" id = "domain"></input>
+		<button onclick = "clickLogin()">click login</button>
+	</form>
+
+</body>
+</html>

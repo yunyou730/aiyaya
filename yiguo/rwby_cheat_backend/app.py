@@ -4,55 +4,124 @@ from flask import url_for
 from flask import escape
 from flask import request
 from flask import redirect
+from flask import render_template
+import json
+import urllib.parse
 
 app = Flask(__name__);
-app.secret_key = b"miaoyunyou";
-# print("app:{}".format(__name__));
+app.config["SECRET_KEY"] = b"aiyaya730"
 
-counter = 0;
+state = {"enable_key":"bukai"}	#yinzhaojunshuodakaitiaoshi!
+state["rids"] = {}
 
-@app.route("/")
-def index():
-	if "username" in session:
-		return "Logged in as %s" % escape(session['username']);
-	return "You are not logged in"
+users = {
+	"rwbydev":"mmo2018001",
+	"miao":"1"
+}
 
+@app.route("/getList/<callback>")
+def getList(callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret);
+		return callback + "(" + retStr + ")"
+	return getUserListCallbackStr(callback)
 
-@app.route("/login",methods = ["GET","POST"])
+@app.route("/add/<uid>/<callback>")
+def add(uid,callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret)
+		return callback + "(" + retStr + ")"	
+	state["rids"][uid] = True;
+	return getUserListCallbackStr(callback)
+
+@app.route("/rem/<uid>/<callback>")
+def rem(uid,callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret);
+		return callback + "(" + retStr + ")"	
+
+	if uid in state["rids"]:
+		del state["rids"][uid]
+	return getUserListCallbackStr(callback)	
+
+@app.route("/toggle/<callback>")
+def toggle(callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret);
+		return callback + "(" + retStr + ")"	
+	if state["enable_key"] == "yinzhaojunshuodakaitiaoshi":
+		state["enable_key"] = "bukai";
+	else:
+		state["enable_key"] = "yinzhaojunshuodakaitiaoshi";
+	return isEnable(callback);
+
+@app.route("/checkEnable/<callback>")
+def isEnable(callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret);
+		return callback + "(" + retStr + ")"
+	if state["enable_key"] == "yinzhaojunshuodakaitiaoshi":
+		return callback + "(\"""enable" + "\")";
+	return callback + "(\"""disable" + "\")";
+
+@app.route("/rwby/<callback>")
+def rwbyState(callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret);
+		return callback + "(" + retStr + ")"
+	resultStr = json.dumps(state);
+	return resultStr
+
+def getUserListCallbackStr(callback):
+	if not checkLogin():
+		ret = {"not_login":True}
+		retStr = json.dumps(ret);
+		return callback + "(" + retStr + ")"		
+	userList = state["rids"];
+	resultStr = json.dumps(userList);
+	return callback + "(" + resultStr + ")";
+
+@app.route("/login",methods = ["POST"])
 def login():
-	if request.method == "POST":
-		session["username"] = request.form["username"]
-		return redirect(url_for("index"))
-	return '''
-		<form method = "post">
-			<p><input type = "text" name = "username"></input>
-			<p><input type = "submit" name = "login"></input>
-		</form>
-	'''
+	print("login----");
+	username = request.form.get("uname");
+	password = request.form.get("pwd");
+	domain = request.form.get("dmain");
+	print("domain:" + domain);
+	if username in users:
+		if users[username] == password:
+			# return "login success"
+			# url = urllib.parse.quote("d:/miao/aiyaya/yiguo/rwby_cheat_frontend/index.html")
+			# url = urllib.parse.quote(domain)
+			url = domain
+			print("after encode url:" + url);
+			session["username"] = username;
+			return render_template("login_success.html",url=url)
+	if session.get("username") != None:
+		session.pop("username");
+	return "wrong username password"
 
+@app.route("/logout/<callback>")
+def logout(callback):
+	if session.get("username") != None:
+		session.pop("username")
+	return callback + "(\"logout success\")";
 
-@app.route("/logout")
-def logout():
-	session.pop("username",None);
-	return redirect(url_for("index"));
+def checkLogin():
+	if session.get("username") == None:
+		return False;
+	return True;
 
+@app.route("/login")
+def showLogin():
+	return "";
 
-@app.route("/session_view")
-def session_view():
-	global counter
-	counter = counter + 1;
-	ret = "[session view]"
-	for key,value in session.items():
-		ret = ret + "[" + key + "]->" + value + ";"
-	ret = ret + "|counter:" + str(counter);
-	return ret;
-
-@app.route("/session_put/<key>/<value>")
-def session_put(key,value):
-	session[key] = value;
-	return "key:" + key + ",value:" + value
-
-@app.route("/session_remove/<key>")
-def session_remove(key):
-	session.pop(key,None);
-	return session_view();
+@app.route("/showControlpanel")	
+def showControlpanel():
+	return "";
