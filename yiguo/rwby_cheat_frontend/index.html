@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rwby console</title>
+		<script src = "./rwby.js"></script>
+	</head>
+	<body onload = "initView()">
+		rwby console
+		<div id = "req"></div>
+		<div id = "control panel">
+			<button onclick = "logout()">logout</button>
+			<button onclick = "toggle()">toggle feature</button>
+			<div id = "enable_state">waiting...</div>
+			<button onclick = "viewUid()">view uid</button><br/>
+			<button onclick = "addUid()">new uid</button>
+			<input type = "text" id = "new_uid"></input><br/>
+		</div>
+		<div id = "sample_uid_cell">
+			<label id = "uid_label">uid:abcdefg</label>
+			<button id = "uid_rem">-</button>
+		</div>
+		<div id = "uid_listview"></div>
+	</body>
+</html>
