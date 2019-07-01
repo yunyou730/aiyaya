@@ -16,8 +16,7 @@ state = {"enable_key":"bukai"}
 state["rids"] = {}
 
 users = {
-	"rwbydev":"mmo2018001",
-	"miao":"1"
+	"rwbydev":"mmo2018001"
 }
 
 CONST_ENABLE_KEY = "yzj_said_dakai_tiaoshi!!"
