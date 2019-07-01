@@ -12,13 +12,15 @@ app = Flask(__name__);
 app.config["SECRET_KEY"] = b"aiyaya730"
 app.debug = True
 
-state = {"enable_key":"bukai"}	#yinzhaojunshuodakaitiaoshi!
+state = {"enable_key":"bukai"}	
 state["rids"] = {}
 
 users = {
 	"rwbydev":"mmo2018001",
 	"miao":"1"
 }
+
+CONST_ENABLE_KEY = "yzj_said_dakai_tiaoshi!!"
 
 @app.route("/getList/<callback>")
 def getList(callback):
@@ -54,10 +56,10 @@ def toggle(callback):
 		ret = {"not_login":True}
 		retStr = json.dumps(ret);
 		return callback + "(" + retStr + ")"	
-	if state["enable_key"] == "yzj_said_dakai_tiaoshi!!":
+	if state["enable_key"] == CONST_ENABLE_KEY
 		state["enable_key"] = "bukai";
 	else:
-		state["enable_key"] = "yzj_said_dakai_tiaoshi!!";
+		state["enable_key"] = CONST_ENABLE_KEY
 	return isEnable(callback);
 
 @app.route("/checkEnable/<callback>")
@@ -66,7 +68,7 @@ def isEnable(callback):
 		ret = {"not_login":True}
 		retStr = json.dumps(ret);
 		return callback + "(" + retStr + ")"
-	if state["enable_key"] == "yinzhaojunshuodakaitiaoshi":
+	if state["enable_key"] == CONST_ENABLE_KEY:
 		return callback + "(\"""enable" + "\")";
 	return callback + "(\"""disable" + "\")";
 
