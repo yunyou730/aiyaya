@@ -53,10 +53,10 @@ def toggle(callback):
 		ret = {"not_login":True}
 		retStr = json.dumps(ret);
 		return callback + "(" + retStr + ")"	
-	if state["enable_key"] == "yinzhaojunshuodakaitiaoshi":
+	if state["enable_key"] == "yzj_said_dakai_tiaoshi!!":
 		state["enable_key"] = "bukai";
 	else:
-		state["enable_key"] = "yinzhaojunshuodakaitiaoshi";
+		state["enable_key"] = "yzj_said_dakai_tiaoshi!!";
 	return isEnable(callback);
 
 @app.route("/checkEnable/<callback>")
