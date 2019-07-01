@@ -1,4 +1,5 @@
-var baseUrl = "http://gj1111myl:3031"
+var serverUrl = "http://gj1111myl.cn:3031"
+var clientUrl = "http://gj1111myl.cn/rwby"
 var widgetUidMap = new Array();
 
 function initView()
@@ -16,7 +17,7 @@ function jsonp(url)
 
 function getFullUrl(url)
 {
-	return baseUrl + url;
+	return serverUrl + url;
 }
 
 function checkEnable()
