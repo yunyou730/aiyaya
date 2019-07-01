@@ -1,0 +1,370 @@
+[uWSGI] getting INI configuration from launch-uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 16:52:51 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 01 July 2019 05:38:16
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_0_15_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/workspace/aiyaya/yiguo/rwby_cheat_backend
+detected binary path: /usr/local/python3Dir/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7283
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3031 fd 4
+spawned uWSGI http 1 (pid: 22018)
+uwsgi socket 0 bound to TCP address 127.0.0.1:36001 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Jun 28 2019, 17:50:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1b05bc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 22017, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/1] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:52:51 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/2] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:52:51 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/3] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:52:58 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/4] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:52:58 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/5] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:52:59 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/6] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:52:59 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/7] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:52:59 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/8] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:52:59 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/9] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:52:59 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22017|app: -1|req: -1/10] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:52:59 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Gracefully killing worker 1 (pid: 22017)...
+[uWSGI] getting INI configuration from launch-uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 16:54:15 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 01 July 2019 05:38:16
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_0_15_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/workspace/aiyaya/yiguo/rwby_cheat_backend
+detected binary path: /usr/local/python3Dir/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7283
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3031 fd 4
+spawned uWSGI http 1 (pid: 22257)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35216 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Jun 28 2019, 17:50:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xb48bc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 22256, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/1] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:54:29 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/2] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:54:29 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/3] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:58:17 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/4] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:58:17 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/5] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 16:58:32 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/6] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 16:58:33 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/7] 117.100.225.136 () {40 vars in 1060 bytes} [Mon Jul  1 17:00:18 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 22256|app: -1|req: -1/8] 117.100.225.136 () {42 vars in 1026 bytes} [Mon Jul  1 17:00:18 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[uWSGI] getting INI configuration from launch-uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 17:22:58 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 01 July 2019 05:38:16
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_0_15_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/workspace/aiyaya/yiguo/rwby_cheat_backend
+detected binary path: /usr/local/python3Dir/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7283
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3031 fd 4
+spawned uWSGI http 1 (pid: 26218)
+uwsgi socket 0 bound to TCP address 127.0.0.1:44236 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Jun 28 2019, 17:50:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x10efbc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 26217, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 26217|app: -1|req: -1/1] 117.100.225.136 () {40 vars in 1059 bytes} [Mon Jul  1 17:22:58 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26217|app: -1|req: -1/2] 117.100.225.136 () {42 vars in 1025 bytes} [Mon Jul  1 17:22:58 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26217|app: -1|req: -1/3] 117.100.225.136 () {40 vars in 1059 bytes} [Mon Jul  1 17:23:04 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26217|app: -1|req: -1/4] 117.100.225.136 () {42 vars in 1025 bytes} [Mon Jul  1 17:23:04 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[uWSGI] getting INI configuration from launch-uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 17:32:33 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 01 July 2019 05:38:16
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_0_15_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/workspace/aiyaya/yiguo/rwby_cheat_backend
+detected binary path: /usr/local/python3Dir/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7283
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :3031 fd 4
+spawned uWSGI http 1 (pid: 27498)
+uwsgi socket 0 bound to TCP address 127.0.0.1:36064 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Jun 28 2019, 17:50:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x244bbc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72920 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 27497, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/1] 117.100.225.136 () {40 vars in 1053 bytes} [Mon Jul  1 17:32:39 2019] GET /login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/2] 117.100.225.136 () {38 vars in 973 bytes} [Mon Jul  1 17:32:39 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/3] 117.100.225.136 () {36 vars in 920 bytes} [Mon Jul  1 17:33:19 2019] GET /checkEnable/check_callback => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/4] 117.100.225.136 () {36 vars in 921 bytes} [Mon Jul  1 17:33:28 2019] GET /checkEnable/check_callback => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/5] 117.100.225.136 () {36 vars in 921 bytes} [Mon Jul  1 17:33:30 2019] GET /checkEnable/check_callback => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/6] 117.100.225.136 () {36 vars in 921 bytes} [Mon Jul  1 17:34:02 2019] GET /checkEnable/check_callback => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/7] 117.100.225.136 () {36 vars in 921 bytes} [Mon Jul  1 17:34:41 2019] GET /checkEnable/check_callback => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/8] 117.100.225.136 () {38 vars in 1071 bytes} [Mon Jul  1 17:35:27 2019] GET /checkEnable/check_callback => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27497|app: -1|req: -1/9] 117.100.225.136 () {38 vars in 994 bytes} [Mon Jul  1 17:35:27 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[uWSGI] getting INI configuration from launch-uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 18:01:49 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 01 July 2019 05:38:16
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_0_15_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/workspace/aiyaya/yiguo/rwby_cheat_backend
+detected binary path: /usr/local/python3Dir/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7283
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:3031 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37079 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Jun 28 2019, 17:50:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1e83bd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1e83bd0 pid: 31529 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31529)
+spawned uWSGI worker 1 (pid: 31531, cores: 2)
+spawned uWSGI worker 2 (pid: 31532, cores: 2)
+spawned uWSGI worker 3 (pid: 31533, cores: 2)
+spawned uWSGI worker 4 (pid: 31534, cores: 2)
+*** Stats server enabled on 127.0.0.1:3032 fd: 18 ***
+spawned uWSGI http 1 (pid: 31535)
+Mon Jul  1 18:05:13 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Jul  1 18:05:13 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+unable to load configuration from launch-uwsgi
+[uWSGI] getting INI configuration from launch-uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 18:06:31 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 01 July 2019 05:38:16
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: VM_0_15_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/workspace/aiyaya/yiguo/rwby_cheat_backend
+detected binary path: /usr/local/python3Dir/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7283
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:3031 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40735 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.3 (default, Jun 28 2019, 17:50:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x199bbd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x199bbd0 pid: 32279 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 32279)
+spawned uWSGI worker 1 (pid: 32281, cores: 2)
+spawned uWSGI worker 2 (pid: 32282, cores: 2)
+spawned uWSGI worker 3 (pid: 32283, cores: 2)
+spawned uWSGI worker 4 (pid: 32284, cores: 2)
+*** Stats server enabled on 127.0.0.1:3032 fd: 18 ***
+spawned uWSGI http 1 (pid: 32285)
+[pid: 32284|app: 0|req: 1/1] 117.100.225.136 () {40 vars in 1072 bytes} [Mon Jul  1 18:06:49 2019] GET /getList/bbb => generated 24 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 2/2] 117.100.225.136 () {38 vars in 962 bytes} [Mon Jul  1 18:09:57 2019] GET /checkEnable/check_callback => generated 35 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 3/3] 117.100.225.136 () {38 vars in 960 bytes} [Mon Jul  1 18:10:21 2019] GET /checkEnable/check_callback => generated 35 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 4/4] 117.100.225.136 () {38 vars in 962 bytes} [Mon Jul  1 18:11:00 2019] GET /checkEnable/check_callback => generated 35 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 5/5] 117.100.225.136 () {38 vars in 962 bytes} [Mon Jul  1 18:13:01 2019] GET /checkEnable/check_callback => generated 35 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 6/6] 117.100.225.136 () {38 vars in 962 bytes} [Mon Jul  1 18:14:25 2019] GET /checkEnable/check_callback => generated 35 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+login----
+domain:http://www.baidu.com
+after encode url:http://www.baidu.com
+[pid: 32284|app: 0|req: 7/7] 117.100.225.136 () {48 vars in 1215 bytes} [Mon Jul  1 18:17:19 2019] POST /login => generated 633 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 195 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 8/8] 117.100.225.136 () {38 vars in 1033 bytes} [Mon Jul  1 18:17:30 2019] GET /checkEnable/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 9/9] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:34 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 10/10] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:36 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 11/11] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:37 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 12/12] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:38 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 1/13] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:38 2019] GET /toggle/check_callback => generated 25 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 13/14] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:38 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 14/15] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:38 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 15/16] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:39 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32282|app: 0|req: 1/17] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:39 2019] GET /toggle/check_callback => generated 25 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32283|app: 0|req: 2/18] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:40 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32281|app: 0|req: 1/19] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:40 2019] GET /toggle/check_callback => generated 25 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 16/20] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:40 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 3/21] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:40 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 17/22] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:41 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 18/23] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:41 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 19/24] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:42 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 4/25] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:42 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32281|app: 0|req: 2/26] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:42 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 20/27] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:42 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32282|app: 0|req: 2/28] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:43 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 21/29] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:48 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 22/30] 117.100.225.136 () {38 vars in 1027 bytes} [Mon Jul  1 18:17:57 2019] GET /add/test11/add_callback => generated 30 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 23/31] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:58 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 24/32] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:58 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 5/33] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:17:59 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 25/34] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:00 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 26/35] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:01 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 6/36] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:01 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 27/37] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:01 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 28/38] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:02 2019] GET /getList/view_callback => generated 31 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 29/39] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:03 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 30/40] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:03 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 31/41] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:04 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 7/42] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:05 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 32/43] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:05 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 33/44] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:05 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32282|app: 0|req: 3/45] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:06 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32283|app: 0|req: 8/46] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:06 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32281|app: 0|req: 3/47] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:06 2019] GET /getList/view_callback => generated 17 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 34/48] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:06 2019] GET /getList/view_callback => generated 31 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 35/49] 117.100.225.136 () {38 vars in 1027 bytes} [Mon Jul  1 18:18:08 2019] GET /add/test12/add_callback => generated 46 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 36/50] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:09 2019] GET /getList/view_callback => generated 47 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 37/51] 117.100.225.136 () {38 vars in 1027 bytes} [Mon Jul  1 18:18:11 2019] GET /add/test13/add_callback => generated 62 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 38/52] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:12 2019] GET /getList/view_callback => generated 63 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 39/53] 117.100.225.136 () {38 vars in 1033 bytes} [Mon Jul  1 18:18:15 2019] GET /checkEnable/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 40/54] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:16 2019] GET /getList/view_callback => generated 63 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 41/55] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:21 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 9/56] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:23 2019] GET /toggle/check_callback => generated 25 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32284|app: 0|req: 42/57] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:23 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32284|app: 0|req: 43/58] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:24 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32283|app: 0|req: 10/59] 117.100.225.136 () {38 vars in 1023 bytes} [Mon Jul  1 18:18:24 2019] GET /toggle/check_callback => generated 25 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
