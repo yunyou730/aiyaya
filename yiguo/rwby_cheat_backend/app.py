@@ -15,8 +15,7 @@ state = {"enable_key":"bukai"}
 state["rids"] = {}
 
 users = {
-	"rwbydev":"mmo2018001",
-	"miao":"1"
+	"rwbydev":"mmo2018001"
 }
 
 CONST_ENABLE_KEY = "yzj_said_dakai_tiaoshi!!"
@@ -73,10 +72,10 @@ def isEnable(callback):
 
 @app.route("/rwby/<callback>")
 def rwbyState(callback):
-	if not checkLogin():
-		ret = {"not_login":True}
-		retStr = json.dumps(ret);
-		return callback + "(" + retStr + ")"
+	# if not checkLogin():
+	# 	ret = {"not_login":True}
+	# 	retStr = json.dumps(ret);
+	# 	return callback + "(" + retStr + ")"
 	resultStr = json.dumps(state);
 	return resultStr
 
