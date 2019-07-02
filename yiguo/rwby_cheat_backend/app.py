@@ -10,6 +10,7 @@ import urllib.parse
 
 app = Flask(__name__);
 app.config["SECRET_KEY"] = b"aiyaya730"
+app.debug = True
 
 state = {"enable_key":"bukai"}	
 state["rids"] = {}
@@ -126,3 +127,7 @@ def showLogin():
 @app.route("/showControlpanel")	
 def showControlpanel():
 	return "";
+
+
+if __name__ == "__main__":
+	app.run(host = "0.0.0.0",debug = True)
